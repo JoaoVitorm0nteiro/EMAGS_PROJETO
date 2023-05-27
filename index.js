@@ -9,7 +9,7 @@ app.use(express.static('public'));
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
-app.get('/', (req,res)=>{
+app.get('/login', (req,res)=>{
     res.render('login')
 });
 
