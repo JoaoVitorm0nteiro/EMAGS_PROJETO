@@ -5,8 +5,10 @@
     src: local('Gameplay'), url('Gameplay.woff') format('woff');
 }
 
+
+
 /*IMPORT GOOGLE FONT*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
 
 
 body {
@@ -14,31 +16,35 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white !important;
-    margin-top: 11rem !important;
+    margin-top: 8.3rem !important;
 }
 
 /*Fonte tela login*/
-.loginscr{
-    font-family: 'Gameplay'!important;
+.loginscr {
+    font-family: 'Gameplay' !important;
 }
-h2{
-    font-size:22px !important;
+
+h1 {
+    font-size: 50px !important;
+}
+
+h2 {
+    font-size: 23px !important;
 }
 
 /*BOTOES*/
-button{
-    font-weight: 500!important;    
+button {
+    font-weight: 500 !important;
     border-radius: 60px !important;
     border: none !important;
     margin-left: 21rem !important;
-    width:9.5rem !important;
+    width: 9.5rem !important;
 }
 
-.btn1{
+.btn1 {
     background: #FF914D !important;
 }
 
-.btn2{
+.btn2 {
     background: #5E17EB !important;
 }
-
