@@ -1,0 +1,36 @@
+/*import font*/
+@font-face {
+    font-family: 'KrunchBold-OKn6';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KrunchBold-OKn6'), url('KrunchBold-OKn6.ttf') format('ttf');
+  }
+
+body {
+    background-image: url(emag.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 8.3rem !important;
+}
+
+.inpt{
+    background-color:#5B6C6D !important;
+}
+
+.card1{
+    color: #5E17EB !important;
+}
+
+.card2{
+    color: #5E17EB !important;
+}
+
+.button{
+    background-color: #9A06EF !important;
+    color: #fff !important;
+}
+
+.card{
+    border-radius: 0 !important;
+    font-family: 'KrunchBold-OKn6' !important;
+}

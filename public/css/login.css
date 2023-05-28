@@ -1,3 +1,4 @@
+/*import font*/
 @font-face {
     font-family: 'Gameplay';
     font-style: normal;
@@ -5,17 +6,11 @@
     src: local('Gameplay'), url('Gameplay.woff') format('woff');
 }
 
-
-
-/*IMPORT GOOGLE FONT*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
-
-
 body {
     background-image: url(emag.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white !important;
+    color: #fff !important;
     margin-top: 8.3rem !important;
 }
 
