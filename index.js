@@ -1,8 +1,17 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+const conn = require('./scriptbd');
 
 const app = express();
 const port = 3000;
+
+conn.connect((err)=>{
+    if(err){
+        console.log(err);
+    }else{
+        console.log('Conectado');
+    }
+})
 
 app.use(express.static('public'));
 
@@ -15,7 +24,6 @@ app.get('/login', (req,res)=>{
     res.render('login',{
         title:'Login',
         style:'login.css'
-
     });
 });
 
