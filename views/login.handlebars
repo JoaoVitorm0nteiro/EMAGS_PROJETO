@@ -1,19 +1,18 @@
-<form action="">
-
-    <div class="col-6 offset-3 card">
-
+<form action="/auth" method="POST">
+    <div class="col-6 offset-3 card rounded-3">
         <div class="card1 col-4 offset-4 text-center mt-4">
             <h1 class="text">LOGIN</h1>
         </div>
 
         <div class="card2 row justify-content-center mb-4 ">
 
+            <!--INPUT-->
         <div class="col-7 mx-4">
-            <label for="login" class="form-label">EMAIL</label>
-            <input type="text" id="login" class="inpt form-control mb-4 rounded-pill" aria-labelledby="">
+            <label for="email" class="form-label">EMAIL</label>
+            <input type="text" name="email" id="email" class="inpt form-control mb-4 rounded-pill" aria-labelledby="">
         
-            <label for="name" class="form-label">SENHA</label>
-            <input type="password" id="password" class="inpt form-control rounded-pill" aria-labelledby="">
+            <label for="pass" class="form-label">SENHA</label>
+            <input type="password" name="pass" id="pass" class="inpt form-control rounded-pill" aria-labelledby="">
         </div>
 
         </div>
@@ -22,8 +21,5 @@
             <input type="submit" id="enviar" value="ENTRAR" class="button form-control rounded-pill" aria-labelledby="">
         </div>
 
-       
-
     </div>
-
-</form>s
+</form>

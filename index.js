@@ -14,6 +14,16 @@ const port = 3000;
     }
 }) */
 
+//ler o body
+app.use(express.json());
+
+app.use(
+    express.urlencoded({
+        extended:false,
+    }),
+)
+
+
 app.use(express.static('public'));
 
 app.engine('handlebars', exphbs.engine());
@@ -21,7 +31,7 @@ app.set('view engine', 'handlebars');
 
 
 //INDEX
-app.get('/index', (req,res)=>{
+app.get('/', (req,res)=>{
     res.render('index',{
         title:'index',
         style:'index.css'
@@ -43,6 +53,12 @@ app.get('/login', (req,res)=>{
         style:'login.css'
     });
 });
+
+app.post('/auth', (req,res)=>{
+
+    console.log(req.body.email, req.body.pass);
+    res.redirect('/login');
+})
 
 app.listen(port, ()=>{
     console.log(`Executando na porta ${port}`);
