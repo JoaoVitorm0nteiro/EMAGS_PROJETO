@@ -19,7 +19,7 @@ app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
 
-//PAGINA DE LOGIN
+//HOME
 app.get('/home', (req,res)=>{
     res.render('home',{
         title:'Home',
@@ -35,6 +35,7 @@ app.get('/register', (req, res)=>{
    }); 
 });
 
+//PAGINA DE LOGIN
 app.get('/login', (req,res)=>{
     res.render('login', {
         title:'Login',
