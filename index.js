@@ -20,10 +20,10 @@ app.set('view engine', 'handlebars');
 
 
 //PAGINA DE LOGIN
-app.get('/login', (req,res)=>{
-    res.render('login',{
-        title:'Login',
-        style:'login.css'
+app.get('/home', (req,res)=>{
+    res.render('home',{
+        title:'Home',
+        style:'home.css'
     });
 });
 
@@ -33,6 +33,13 @@ app.get('/register', (req, res)=>{
     title:'Register',
     style:'register.css'
    }); 
+});
+
+app.get('/login', (req,res)=>{
+    res.render('login', {
+        title:'Login',
+        style:'login.css'
+    });
 });
 
 app.listen(port, ()=>{

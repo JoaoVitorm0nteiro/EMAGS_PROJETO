@@ -1,45 +1,40 @@
-/*import font*/
 @font-face {
-    font-family: 'Gameplay';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Gameplay'), url('Gameplay.woff') format('woff');
-}
+    font-family: Krunchbold;
+    src: url('KrunchBold-OKn6.ttf');
+  }
 
 body {
     background-image: url(emag.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #fff !important;
     margin-top: 8.3rem !important;
 }
 
-/*Fonte tela login*/
-.loginscr {
-    font-family: 'Gameplay' !important;
+/*import font*/
+@font-face {
+    font-family: Krunchbold;
+    src: url('KrunchBold-OKn6.ttf');
+  }
+
+.inpt{
+    background-color:#5B6C6D !important;
+    height: 50px !important;
 }
 
-h1 {
-    font-size: 50px !important;
+h1{
+    font-size: 55px !important;
 }
 
-h2 {
-    font-size: 23px !important;
+.button{
+    background-color: #FF914D !important;
+    color: #fff !important;
+    height: 35px !important;
 }
 
-/*BOTOES*/
-button {
-    font-weight: 500 !important;
-    border-radius: 60px !important;
-    border: none !important;
-    margin-left: 21rem !important;
-    width: 9.5rem !important;
+.card{
+    border-radius: 0 !important;
+    font-family: Krunchbold !important;
+    color: #FF914D !important;
 }
 
-.btn1 {
-    background: #FF914D !important;
-}
 
-.btn2 {
-    background: #5E17EB !important;
-}

@@ -13,10 +13,11 @@ body {
 
 .inpt{
     background-color:#5B6C6D !important;
+
 }
 
 h1{
-    font-size: 55px !important;
+    font-size: 53px !important;
 }
 
 .card1{
@@ -30,6 +31,8 @@ h1{
 .button{
     background-color: #9A06EF !important;
     color: #fff !important;
+    height: 35px !important;
+
 }
 
 .card{
