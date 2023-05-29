@@ -5,13 +5,14 @@ const conn = require('./scriptbd');
 const app = express();
 const port = 3000;
 
-conn.connect((err)=>{
+// bd connection
+/* conn.connect((err)=>{
     if(err){
         console.log(err);
     }else{
         console.log('Conectado');
     }
-})
+}) */
 
 app.use(express.static('public'));
 
