@@ -20,10 +20,10 @@ app.set('view engine', 'handlebars');
 
 
 //HOME
-app.get('/home', (req,res)=>{
-    res.render('home',{
-        title:'Home',
-        style:'home.css'
+app.get('/index', (req,res)=>{
+    res.render('index',{
+        title:'index',
+        style:'index.css'
     });
 });
 
