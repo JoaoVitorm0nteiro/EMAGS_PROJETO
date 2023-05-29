@@ -19,7 +19,7 @@ app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
 
-//HOME
+//INDEX
 app.get('/index', (req,res)=>{
     res.render('index',{
         title:'index',
