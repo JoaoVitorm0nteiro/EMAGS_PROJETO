@@ -13,15 +13,6 @@ conn.connect(function (err) {
     }
 })
 
-// bd connection
-/* conn.connect((err)=>{
-    if(err){
-        console.log(err);
-    }else{
-        console.log('Conectado');
-    }
-}) */
-
 //ler o body
 app.use(express.json());
 
@@ -58,12 +49,7 @@ app.get('/register', (req, res)=>{
 
 app.post('/cad', (req,res)=>{
 
-    const regfiles = {
-        email: req.body.email,
-        nome: req.body.name,
-        senha: req.body.pass,
-        username: req.body.username
-    }
+    
 
     res.redirect('/login')
 
