@@ -1,3 +1,1 @@
-
-const email = document.querySelector('#email').value
-localStorage.setItem("email",email);
+window.alert("TENTE NOVAMENTE");
