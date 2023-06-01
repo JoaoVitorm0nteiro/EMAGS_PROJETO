@@ -61,6 +61,7 @@ app.post('/cad', (req, res) => {
 })
 
 app.get('/profile', (req,res)=>{
+
     res.render('profile', {
         title:'Profile',
         style:'profile.css'

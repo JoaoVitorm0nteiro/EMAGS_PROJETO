@@ -7,21 +7,23 @@ body{
     background-image:url(backgroundprofile.png) ;
 }
 
+/*navbar*/
+.navbar{
+    height: 7rem;
+    background-color: #FF914D;
+    font-family: KrunchBold;
+    display: block;
+}
+
 /*imagem de perfil*/
 .profile_circle{
     width: 4rem;
-    height: 4rem;
-    margin-right: 1rem;
+    height: 4rem;    
     border-radius: 50%;
     background-image: url(profilepicmale.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.navbar{
-    margin: 0 !important;
-    background-color: #FF914D !important;
-    padding-left: 1rem !important;
+    margin-left: 11px;
 }
 
