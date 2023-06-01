@@ -30,7 +30,7 @@ app.set('view engine', 'handlebars');
 //INDEX
 app.get('/', (req, res) => {
     res.render('index', {
-        title: 'index',
+        title: 'Emag',
         style: 'index.css'
     });
 });
@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
 //PAGINA DE REGISTRO
 app.get('/register', (req, res) => {
     res.render('register', {
-        title: 'Register',
+        title: 'Emag - Register',
         style: 'register.css'
     });
 
@@ -60,12 +60,18 @@ app.post('/cad', (req, res) => {
 
 })
 
+app.get('/profile', (req,res)=>{
+    res.render('profile', {
+        title:'Profile',
+        style:'profile.css'
+    })
+})
+
 //PAGINA DE LOGIN
 app.get('/login', (req, res) => {
     res.render('login', {
-        title: 'Login',
-        style: 'login.css',
-        js: 'scriptlogin.js'
+        title: 'Emag - Login',
+        style: 'login.css'
     });
 });
 
@@ -75,6 +81,7 @@ app.post('/auth', (req, res) => {
     conn.query(query, (err, data) => {
         if(err) console.log(err);
         if(data.length>0) res.render('profile');
+
         //renderizando a pagina de login novamente no caso da senha estar errada
         //carrega um script js junto com um window.alert dizendo que a senha esta errada
         res.render('login',{
