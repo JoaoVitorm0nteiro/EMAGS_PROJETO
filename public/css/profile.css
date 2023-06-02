@@ -4,7 +4,7 @@
   }
 
 body{
-    background-image:url(backgroundprofile.png) ;
+    background-image:url(backgroundprofile.png);
 }
 
 /*navbar*/
@@ -43,3 +43,12 @@ input::placeholder{
     background-color: #FF914D;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.card:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }

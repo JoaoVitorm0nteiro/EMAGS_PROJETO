@@ -60,14 +60,6 @@ app.post('/cad', (req, res) => {
 
 })
 
-app.get('/profile', (req,res)=>{
-
-    res.render('profile', {
-        title:'Profile',
-        style:'profile.css'
-    })
-})
-
 //PAGINA DE LOGIN
 app.get('/login', (req, res) => {
     res.render('login', {
@@ -81,7 +73,10 @@ app.post('/auth', (req, res) => {
     const query = `SELECT * FROM USER_REG WHERE EMAIL = '${req.body.email}' AND SENHA = '${req.body.pass}'`;
     conn.query(query, (err, data) => {
         if(err) console.log(err);
-        if(data.length>0) res.render('profile');
+        if(data.length>0) res.render('profile',{
+            title:'@gustah090',
+            style:'profile.css'
+        });
 
         //renderizando a pagina de login novamente no caso da senha estar errada
         //carrega um script js junto com um window.alert dizendo que a senha esta errada
