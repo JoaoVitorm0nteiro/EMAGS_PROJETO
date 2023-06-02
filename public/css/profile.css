@@ -15,6 +15,12 @@ body{
     display: block;
 }
 
+/*placeholder do input*/
+input::placeholder{
+    color: #fff !important;
+    font-size: 15px !important;
+
+}
 /*imagem de perfil*/
 .profile_circle{
     width: 4rem;
@@ -24,6 +30,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 11px;
+    margin-left: 1rem;
 }
 
+.container1 {
+    font-family: KrunchBold !important;
+    margin: 1rem !important;
+}
