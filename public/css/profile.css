@@ -37,3 +37,9 @@ input::placeholder{
     font-family: KrunchBold !important;
     margin: 1rem !important;
 }
+
+.footer{
+    width: 100vw;
+    background-color: #FF914D;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
