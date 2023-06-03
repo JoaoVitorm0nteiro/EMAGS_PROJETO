@@ -16,7 +16,7 @@ body{
 
 /*placeholder do input*/
 input::placeholder{
-    color: #fff !important;
+    color: black !important;
     font-size: 15px !important;
 
 }

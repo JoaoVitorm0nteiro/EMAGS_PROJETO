@@ -18,8 +18,9 @@ body {
   }
 
 .inpt{
-    background-color:#5B6C6D !important;
+    background-color:#fff !important;
     height: 50px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 
 h1{
