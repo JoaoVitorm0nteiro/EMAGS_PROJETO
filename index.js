@@ -30,7 +30,7 @@ app.set('view engine', 'handlebars');
 //INDEX
 app.get('/', (req, res) => {
     res.render('index', {
-        title: 'Emag',
+        title: 'Catalogames',
         style: 'index.css'
     });
 });
@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
 //PAGINA DE REGISTRO
 app.get('/register', (req, res) => {
     res.render('register', {
-        title: 'Emag - Register',
+        title: 'Catalogames - Register',
         style: 'register.css'
     });
 
@@ -63,7 +63,7 @@ app.post('/cad', (req, res) => {
 //PAGINA DE LOGIN
 app.get('/login', (req, res) => {
     res.render('login', {
-        title: 'Emag - Login',
+        title: 'Catalogames - Login',
         style: 'login.css'
     });
 });
@@ -75,7 +75,7 @@ app.post('/auth', (req, res) => {
         if(err) console.log(err);
         if(data.length>0) {
             res.render('profile',{
-                title:'@gustah090',
+                title: '@gustah090',
                 style:'profile.css'
             }); 
         }else{

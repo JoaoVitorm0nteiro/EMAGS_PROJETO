@@ -20,24 +20,27 @@ body {
     font-family: 'Gameplay' !important;
 }
 
+.container{
+    margin-left: 20rem !important;
+}
+
 a{
     text-decoration: none !important;
     color:inherit !important;
 }
 
 h1 {
-    font-size: 50px !important;
+    font-size: 60px !important;
 }
 
 h2 {
-    font-size: 23px !important;
+    font-size: 26px !important;
 }
 
 /*BOTOES*/
 button {
     font-weight: 500 !important;
     border: none !important;
-    margin-left: 358px !important;
     width: 9.5rem !important;
 }
 
