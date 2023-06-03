@@ -73,18 +73,20 @@ app.post('/auth', (req, res) => {
     const query = `SELECT * FROM USER_REG WHERE EMAIL = '${req.body.email}' AND SENHA = '${req.body.pass}'`;
     conn.query(query, (err, data) => {
         if(err) console.log(err);
-        if(data.length>0) res.render('profile',{
-            title:'@gustah090',
-            style:'profile.css'
-        });
-
+        if(data.length>0) {
+            res.render('profile',{
+                title:'@gustah090',
+                style:'profile.css'
+            }); 
+        }else{
         //renderizando a pagina de login novamente no caso da senha estar errada
         //carrega um script js junto com um window.alert dizendo que a senha esta errada
-        res.render('login',{
-            title:'Login Incorreto',
-            style:'login.css',
-            js:'scriptlogin.js'
-        });  
+            res.render('login',{
+                title:'Login Incorreto',
+                style:'login.css',
+                js:'scriptlogin.js'
+            }); 
+        } 
     })
 })
 
